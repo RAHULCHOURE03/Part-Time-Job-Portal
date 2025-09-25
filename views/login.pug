@@ -1,0 +1,20 @@
+extends  base.pug
+
+block scripts 
+    script(src="/static/script.js")
+
+block style 
+    style 
+       include ../static/login.css
+
+block content
+    div.maincont 
+        #login-container
+            h1 Login
+            form(action='/login' method='POST')
+                .input-container
+                    input(type='text' name='username' placeholder='Username or Email')
+                .input-container
+                    input(type='password' name='password' placeholder='Password')
+                button#login-button(type='submit') Log In
+                a(href="/signup" , style="color:blue; text-align:left; margin:3px;") new_user

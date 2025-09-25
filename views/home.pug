@@ -1,0 +1,22 @@
+extends  base.pug
+
+block scripts 
+    script(src="/static/script.js")
+
+block style 
+    style 
+       include ../static/style.css
+
+block content 
+    p
+    h1 welcome to part time job portal
+    p
+    .main
+        #sidebar(style='text-align: center;') recent jobs
+            ul
+                if recentJobs
+                    each job in recentJobs
+                        li
+                            a(href=`/job/${job.job_id}`)= job.job_title
+        #content
+            // <h1 style="color: rgb(255, 255, 255);">here are the complete information about us</h1>

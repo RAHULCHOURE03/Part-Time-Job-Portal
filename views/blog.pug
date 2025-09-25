@@ -1,0 +1,19 @@
+extends  base.pug
+
+block scripts 
+    script(src="/static/script.js")
+
+block style 
+    style 
+       include ../static/blog.css
+
+block content 
+    header
+        h1 Post a Blog
+    main
+        form.form
+            label(for='title') Title:
+            input#title(type='text' name='title' required='')
+            label(for='content') Content:
+            textarea#content(name='content' rows='4' required='')
+            button(type='submit') Submit

@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    style 
+       include ../static/signup.css
+    title Signup Form
+  body
+    h1 Signup
+    .signupform
+      form(action="/signup", method="post")
+        label(for="username") Username:
+        input(type="text", name="username", id="username", placeholder="enter your user name" required)
+        
+        label(for="email") Email:
+        input(type="email", name="email", id="email", placeholder="enter your email" required)
+        
+        label(for="password") Password:
+        input(type="password", name="password", id="password", placeholder='enter a strong password' required)
+        
+        label(for="confirm_password") Confirm Password:
+        input(type="password", name="confirm_password", id="confirm_password", placeholder="confirm your password" required)
+
+        label(for="your_role") Select your role:
+        select#selectOption(name="role", placeholder="select your role")
+          option(value="job_seeker") jobseeker
+          option(value="employer") employer
+          option(value="admin") admin
+        
+        
+        button(type="submit") Sign Up

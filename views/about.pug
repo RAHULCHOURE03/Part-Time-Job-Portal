@@ -1,0 +1,35 @@
+extends  base.pug
+
+block scripts 
+    script(src="/static/script.js")
+
+block style 
+    style 
+       include ../static/about.css
+
+block content 
+    <header>
+        <h1>About Us</h1>
+    </header>
+    <main>
+        <p>Welcome to Your Job Portal, your go-to destination for finding the perfect job or hiring the right talent. Our mission is to connect job seekers with employers and make the job search process as simple and effective as possible.</p>
+        
+        <h2>Our Story</h2>
+        <p>Founded in [Year], Your Job Portal has quickly become a trusted name in the job search industry. It all started with a simple idea: to bridge the gap between job seekers and employers, providing a platform that makes finding and posting jobs a seamless experience.</p>
+        
+        <h2>What We Offer</h2>
+        <p>At Your Job Portal, we offer a wide range of features and services to both job seekers and employers:</p>
+        <ul>
+            <li>Search and apply for job opportunities in various industries and locations.</li>
+            <li>Post job openings to reach a diverse pool of qualified candidates.</li>
+            <li>Create and manage your job profile with ease.</li>
+            <li>Receive personalized job recommendations based on your skills and preferences.</li>
+            <li>Connect with other professionals and grow your network.</li>
+        </ul>
+        
+        <h2>Our Team</h2>
+        <p>We're a passionate and dedicated team of individuals who are committed to helping people find their dream jobs and employers to find their perfect candidates. Our team consists of professionals with years of experience in HR, technology, and design, working together to bring you the best job portal experience.</p>
+        
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feedback, or would like to get in touch, please feel free to <a href="/contact">contact us</a>. We're here to assist you in any way we can.</p>
+    </main>

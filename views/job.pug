@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    style 
+       include ../static/signup.css
+    title job Form
+  body
+    h1 post a job
+    .signupform
+      form(action="/post_job", method="post")
+        label(for="job_id") job id:
+        input(type="text", name="job_id", id="job_id", placeholder="enter the id of your job" required)
+        
+        label(for="job_title") job title:
+        input(type="text", name="job_title", id="job_title", placeholder="enter the title of your job" required)
+        
+        label(for="email") Email:
+        input(type="email", name="email", id="email", placeholder="enter your/company email" required)
+        
+        label(for="type") type:
+        input(type="text", name="type", id="type", placeholder='type of your job' required)
+        
+        label(for="application_form") application form link:
+        input(type="link", name="application_form", id="application_form", placeholder="application link" required)
+        
+        label(for="deadline") application form link:
+        input(type="date", name="deadline", id="deadline", placeholder="enter the deadline for the application " required)
+        
+        button(type="submit") Submit

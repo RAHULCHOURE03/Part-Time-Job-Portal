@@ -1,0 +1,21 @@
+extends  base.pug
+
+block scripts 
+    //- script(src="/static/cscript.js")
+
+block style 
+    style 
+       include ../static/contact.css
+
+block content 
+  header
+    h1 Contact Us
+  .containercon
+    form#contact-form(action='/contact' method='POST')
+      label(for='name') Name:
+      input#name(type='text' name='name' required='')
+      label(for='email') Email:
+      input#email(type='email' name='email' required='')
+      label(for='message') Message:
+      textarea#message(name='message' rows='4' required='')
+      button(type='submit') Submit

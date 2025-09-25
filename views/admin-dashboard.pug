@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    style 
+       include ../static/admin-dashboard.css
+    title dashboard
+  body
+    .container
+        #left
+            nav
+                ul
+                    li#element1.element
+                    a(href='admin-dashboard') dashboard
+                    li#element2.element
+                    a(href='job-application') manage users
+                    li#element3.element
+                    a(href='post-job') manage jobs and applications
+                    li#element4.element
+                    a(href='#') profile
+                    li#element5.element
+                    a(href='#') setings
+        #right 
+            header#navigation 
+              form(action="/logout" method="POST")
+                button(type="logout") logout 
+            .content
+                h1 welcome
+

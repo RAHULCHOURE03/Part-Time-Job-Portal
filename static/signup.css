@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+body{
+    background:url('/static/signup.jpg')no-repeat center center/cover;
+    height: 600px;
+}
+
+h1{
+    text-align: center;
+    display:block;
+    /* border: 2px white solid; */
+    margin-top: 50px;
+
+
+}
+label,
+input,
+textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    color: black;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+.signupform{
+    margin: 60px 200px;
+}
+input:hover{
+    background-color: rgb(95, 165, 219);
+    color: rgb(52, 8, 248);
+}
+#selectOption{
+    color: black;
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+option{
+    color: black;
+}

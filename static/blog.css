@@ -1,0 +1,69 @@
+.form{
+    background-color: rgb(12, 78, 109);
+display: grid;
+grid-template-columns: auto;
+padding: 133px;
+margin: 33px;
+grid-gap: 12px;
+}
+body{
+    background-color: #030302;
+    color: aliceblue;
+}
+button{
+    background-color: rgb(247, 14, 25);
+    width: 66px;
+    height: 33px;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+#footer{
+    background-color: black;
+    height: 25px;
+    color: aliceblue;
+    text-align: center;
+
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    list-style: none;
+}
+.navbar{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr ;
+}
+#right{
+    display: grid;
+    grid-template-columns: 2fr;
+    padding: 3px 3px;
+    margin: 2px 2px;
+    grid-gap: 2px;
+
+}
+.navright{
+    border: 2px red solid;
+}
+input:hover{
+    background-color: rgb(95, 165, 219);
+    color: rgb(52, 8, 248);
+}
+#buttonh{
+    color: hsl(0, 12%, 97%);
+    background-color: #0b0b0b;
+}
+
+button:hover{
+    background-color: rgb(52, 8, 211);
+}
+a{
+    text-decoration: none;
+    color: white;
+
+}
+a:hover{
+    text-decoration: underline;
+    color: rgb(72, 6, 203);
+}
