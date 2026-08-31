@@ -15,10 +15,10 @@ const sequelize = require('./static/sequelize');
 
 
 const client = new Client({
-    user: 'postgres',
+    user: 'User_Name',
     host: 'localhost',
-    database: 'ptjportal',
-    password: 'password',
+    database: 'Your_Database',
+    password: 'Ypur_Password',
     port: 5432,
   });
 
